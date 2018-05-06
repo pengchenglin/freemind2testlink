@@ -156,7 +156,6 @@ class FreeMind(object):
                 continue
             # This must be the last TDS node
             tc_list = []
-            # res = self._get_linked_tc(tds_item, tc_list)
             if not tc_list:
                 # There is no linked test case nodes (which mainly used for reusing test cases between projects)
                 if tds_item.attrib['ID'].strip() in existing_tc_list:
@@ -202,7 +201,6 @@ class FreeMind(object):
 
     def _last_tds_node(self, node):
         if node.attrib.has_key('LINK'):
-            # This maybe a PFS/TC item, we need ignore it
             return False
         for child in node.findall('node'):
             if not (child.attrib.has_key('LINK')):
