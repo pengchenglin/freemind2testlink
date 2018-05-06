@@ -12,13 +12,12 @@ xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
 
 #### **使用说明**
 
-- 1、将需要转换的freemind文件(例如demo.mm) 复制到当前文件夹
-- 2、根据编写freemind的时候suite配置的图标，点击By_folder.exe(以文件夹标记suite) 或者By_flag.exe(以小红旗标记为suite)，双击即可生成xml文件和logger.log（log文件可查看导出的相关日志）
-- 3、将生成的xml文件导入到Testlink就好啦
-- 4、mm文件的文件名最好不要出现特殊符号
+- 将需要转换的freemind文件(例如demo.mm) 复制到当前文件夹
+- 根据编写freemind的时候suite配置的图标，点击By_folder.exe(以文件夹标记suite) 或者By_flag.exe(以小红旗标记为suite)，双击即可生成xml文件和logger.log（log文件可查看导出的相关日志）
+- 将生成的xml文件导入到Testlink就好啦
+- mm文件的文件名最好不要出现特殊符号
 
 #### **注意：**
 
-- 1、生成的xml文件在导入testlink时 请在testlink中手动创建一个测试用例集，将xml导入到testlink指定的用例集下。以免和原有的测试用例混淆造成管理混乱
-- 2、执行exe后会将文件夹下所有的.mm文件全部执行转换生成xml，为避免造成运行错误，请尽量保持文件夹下只有一个mm文件。
-
+- 生成的xml文件在导入testlink时 请在testlink中手动创建一个测试用例集，将xml导入到testlink指定的用例集下。以免和原有的测试用例混淆造成管理混乱
+- 执行exe后会将文件夹下所有的.mm文件全部执行转换生成xml，为避免造成运行错误，请尽量保持文件夹下只有一个mm文件。
