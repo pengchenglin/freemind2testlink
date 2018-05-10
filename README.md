@@ -10,12 +10,20 @@ xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
 
 具体的编写可以参照Demo.mm 、Demo.xmind作为参考
 
+![mind](.\img\mind.png)
+
 #### **使用说明**
 - xmind编写的用例请导出为freemind文件
+
 - 将需要转换的freemind文件(例如demo.mm) 复制到当前文件夹
+
 - 根据编写freemind的时候suite配置的图标，点击By_folder.exe(以文件夹标记suite) 或者By_flag.exe(以旗帜标记为suite)，双击即可生成xml文件和logger.log（log文件可查看导出的相关日志）
+
 - 将生成的xml文件导入到Testlink就好啦
+
 - mm文件的文件名最好不要出现特殊符号
+
+  ![testlink](.\img\testlink.png)
 
 #### **注意：**
 
