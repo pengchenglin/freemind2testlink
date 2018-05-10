@@ -10,7 +10,7 @@ xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
 
 具体的编写可以参照Demo.mm 、Demo.xmind作为参考
 
-![mind](.\img\mind.png)
+![mind](\img\mind.png)
 
 #### **使用说明**
 - xmind编写的用例请导出为freemind文件
@@ -23,7 +23,7 @@ xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
 
 - mm文件的文件名最好不要出现特殊符号
 
-  ![testlink](.\img\testlink.png)
+  ![testlink](\img\testlink.png)
 
 #### **注意：**
 
