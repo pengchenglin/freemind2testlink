@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="">
+  <node_order><![CDATA[]]></node_order>
+  <details><![CDATA[]]></details>
+  <testsuite name="Demo">
+    <node_order><![CDATA[0]]></node_order>
+    <details><![CDATA[]]></details>
+    <testsuite name="测试集合1">
+      <node_order><![CDATA[0]]></node_order>
+      <details><![CDATA[]]></details>
+      <testcase name="登录case">
+        <node_order><![CDATA[0]]></node_order>
+        <externalid><![CDATA[]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[登录case]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[3]]></importance>
+        <steps>
+          <step>
+            <step_number><![CDATA[1]]></step_number>
+            <actions><![CDATA[点击登录]]></actions>
+            <expectedresults><![CDATA[ 跳转到登录页面]]></expectedresults>
+            <execution_type><![CDATA[1]]></execution_type>
+          </step>
+          <step>
+            <step_number><![CDATA[2]]></step_number>
+            <actions><![CDATA[输入正确账号密码点击登录 ]]></actions>
+            <expectedresults><![CDATA[ 登录成功]]></expectedresults>
+            <execution_type><![CDATA[1]]></execution_type>
+          </step>
+          <step>
+            <step_number><![CDATA[3]]></step_number>
+            <actions><![CDATA[输入错误账号密码 ]]></actions>
+            <expectedresults><![CDATA[ 提示错误]]></expectedresults>
+            <execution_type><![CDATA[1]]></execution_type>
+          </step>
+        </steps>
+      </testcase>
+      <testcase name="测试用例002">
+        <node_order><![CDATA[1]]></node_order>
+        <externalid><![CDATA[]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[测试用例002]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[2]]></importance>
+      </testcase>
+      <testcase name="测试用例3">
+        <node_order><![CDATA[2]]></node_order>
+        <externalid><![CDATA[]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[测试用例3]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[1]]></importance>
+        <steps>
+          <step>
+            <step_number><![CDATA[1]]></step_number>
+            <actions><![CDATA[打开冰箱]]></actions>
+            <execution_type><![CDATA[1]]></execution_type>
+          </step>
+          <step>
+            <step_number><![CDATA[2]]></step_number>
+            <actions><![CDATA[塞进大象]]></actions>
+            <execution_type><![CDATA[1]]></execution_type>
+          </step>
+          <step>
+            <step_number><![CDATA[3]]></step_number>
+            <actions><![CDATA[关上冰箱]]></actions>
+            <execution_type><![CDATA[1]]></execution_type>
+          </step>
+        </steps>
+      </testcase>
+    </testsuite>
+    <testsuite name="Suite2">
+      <node_order><![CDATA[1]]></node_order>
+      <details><![CDATA[]]></details>
+      <testsuite name="little suite">
+        <node_order><![CDATA[0]]></node_order>
+        <details><![CDATA[]]></details>
+        <testcase name="little suite     case1 withsstep">
+          <node_order><![CDATA[0]]></node_order>
+          <externalid><![CDATA[]]></externalid>
+          <version><![CDATA[1]]></version>
+          <summary><![CDATA[little suite     case1 withsstep]]></summary>
+          <preconditions><![CDATA[]]></preconditions>
+          <execution_type><![CDATA[1]]></execution_type>
+          <importance><![CDATA[2]]></importance>
+          <steps>
+            <step>
+              <step_number><![CDATA[1]]></step_number>
+              <actions><![CDATA[step1]]></actions>
+              <execution_type><![CDATA[1]]></execution_type>
+            </step>
+            <step>
+              <step_number><![CDATA[2]]></step_number>
+              <actions><![CDATA[step2]]></actions>
+              <execution_type><![CDATA[1]]></execution_type>
+            </step>
+            <step>
+              <step_number><![CDATA[3]]></step_number>
+              <actions><![CDATA[step3]]></actions>
+              <execution_type><![CDATA[1]]></execution_type>
+            </step>
+          </steps>
+        </testcase>
+        <testcase name="little suite     case2">
+          <node_order><![CDATA[1]]></node_order>
+          <externalid><![CDATA[]]></externalid>
+          <version><![CDATA[1]]></version>
+          <summary><![CDATA[little suite     case2]]></summary>
+          <preconditions><![CDATA[]]></preconditions>
+          <execution_type><![CDATA[1]]></execution_type>
+          <importance><![CDATA[1]]></importance>
+        </testcase>
+        <testcase name="little suite     case3">
+          <node_order><![CDATA[2]]></node_order>
+          <externalid><![CDATA[]]></externalid>
+          <version><![CDATA[1]]></version>
+          <summary><![CDATA[little suite     case3]]></summary>
+          <preconditions><![CDATA[]]></preconditions>
+          <execution_type><![CDATA[1]]></execution_type>
+          <importance><![CDATA[2]]></importance>
+        </testcase>
+      </testsuite>
+      <testcase name="suite2 case001">
+        <node_order><![CDATA[0]]></node_order>
+        <externalid><![CDATA[]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[suite2 case001]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[1]]></importance>
+      </testcase>
+      <testcase name="suite2 case002">
+        <node_order><![CDATA[1]]></node_order>
+        <externalid><![CDATA[]]></externalid>
+        <version><![CDATA[1]]></version>
+        <summary><![CDATA[suite2 case002]]></summary>
+        <preconditions><![CDATA[]]></preconditions>
+        <execution_type><![CDATA[1]]></execution_type>
+        <importance><![CDATA[3]]></importance>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuite>
