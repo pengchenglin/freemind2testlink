@@ -3,6 +3,7 @@ import logging.config
 import os
 from xml.etree import ElementTree as ET
 from lxml import etree as lxmlET
+import sys
 
 
 def CDATA(text=None):
@@ -11,14 +12,26 @@ def CDATA(text=None):
     return element
 
 
+# def get_freemindfile():
+#     L = []
+#     for root, dirs, files in os.walk('./'):
+#         for file in files:
+#             if os.path.splitext(file)[1] == '.mm':
+#                 # L.append(os.path.join(root, file))
+#                 L.append(file)
+#
+#         if len(L) == 0:
+#                 logging.error('There is no FreeMind file,Please check out!')
+#         return L
+
 def get_freemindfile():
+    ''' for mac or linux'''
     L = []
-    for root, dirs, files in os.walk('./'):
+    for root, dirs, files in os.walk(os.path.dirname(sys.executable)):
+
         for file in files:
             if os.path.splitext(file)[1] == '.mm':
-                # L.append(os.path.join(root, file))
-                L.append(file)
-
+                L.append(os.path.dirname(sys.executable)+'/'+file)
         if len(L) == 0:
                 logging.error('There is no FreeMind file,Please check out!')
         return L
@@ -209,7 +222,8 @@ class FreeMind(object):
 
 
 def start_main():
-    logging.basicConfig(handlers=[logging.FileHandler('logger.log', 'w', 'utf-8')],
+    log_file = os.path.dirname(sys.executable)+'/logger.log'
+    logging.basicConfig(handlers=[logging.FileHandler(log_file, 'w', 'utf-8')],
                         format='%(asctime)s:%(levelname)s  %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S',
                         level=logging.DEBUG,
