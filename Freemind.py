@@ -12,28 +12,16 @@ def CDATA(text=None):
     return element
 
 
-# def get_freemindfile():
-#     L = []
-#     for root, dirs, files in os.walk('./'):
-#         for file in files:
-#             if os.path.splitext(file)[1] == '.mm':
-#                 # L.append(os.path.join(root, file))
-#                 L.append(file)
-#
-#         if len(L) == 0:
-#                 logging.error('There is no FreeMind file,Please check out!')
-#         return L
-
 def get_freemindfile(path):
-    ''' for mac or linux'''
+    ''' for windows'''
     L = []
     for root, dirs, files in os.walk(path):
-
         for file in files:
             if os.path.splitext(file)[1] == '.mm':
-                L.append(path+'/'+file)
+                # L.append(os.path.join(root, file))
+                L.append(path + '/' + file)
         if len(L) == 0:
-                logging.error('There is no FreeMind file,Please check out!')
+            logging.error(path + '\nThere is no FreeMind file,Please check out!')
         return L
 
 
@@ -222,9 +210,10 @@ class FreeMind(object):
 
 
 def start_main():
-    # path = sys.executable
-    path = os.path.dirname(__file__)
-    logging.basicConfig(handlers=[logging.FileHandler(path+'/logger.log', 'w', 'utf-8')],
+    path = os.path.dirname(__file__)  # for windows
+    # path = os.path.dirname(sys.executable)  # for mac
+
+    logging.basicConfig(handlers=[logging.FileHandler(path + '/logger.log', 'w', 'utf-8')],
                         format='%(asctime)s:%(levelname)s  %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S',
                         level=logging.DEBUG,
