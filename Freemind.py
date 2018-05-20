@@ -24,14 +24,14 @@ def CDATA(text=None):
 #                 logging.error('There is no FreeMind file,Please check out!')
 #         return L
 
-def get_freemindfile():
+def get_freemindfile(path):
     ''' for mac or linux'''
     L = []
-    for root, dirs, files in os.walk(os.path.dirname(sys.executable)):
+    for root, dirs, files in os.walk(path):
 
         for file in files:
             if os.path.splitext(file)[1] == '.mm':
-                L.append(os.path.dirname(sys.executable)+'/'+file)
+                L.append(path+'/'+file)
         if len(L) == 0:
                 logging.error('There is no FreeMind file,Please check out!')
         return L
@@ -222,8 +222,9 @@ class FreeMind(object):
 
 
 def start_main():
-    log_file = os.path.dirname(sys.executable)+'/logger.log'
-    logging.basicConfig(handlers=[logging.FileHandler(log_file, 'w', 'utf-8')],
+    # path = sys.executable
+    path = os.path.dirname(__file__)
+    logging.basicConfig(handlers=[logging.FileHandler(path+'/logger.log', 'w', 'utf-8')],
                         format='%(asctime)s:%(levelname)s  %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S',
                         level=logging.DEBUG,
@@ -236,7 +237,7 @@ def start_main():
     # Create an instance
     logging.getLogger().addHandler(console)
 
-    file_list = get_freemindfile()
+    file_list = get_freemindfile(path)
     for file in file_list:
         FreeMind(logger).Generate_TCs_from_TDS(file)
 
