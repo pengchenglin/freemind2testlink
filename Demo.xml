@@ -13,7 +13,6 @@
         <externalid><![CDATA[]]></externalid>
         <version><![CDATA[1]]></version>
         <summary><![CDATA[登录case]]></summary>
-        <preconditions><![CDATA[]]></preconditions>
         <execution_type><![CDATA[1]]></execution_type>
         <importance><![CDATA[3]]></importance>
         <steps>
@@ -37,21 +36,21 @@
           </step>
         </steps>
       </testcase>
-      <testcase name="测试用例002">
+      <testcase name="用例描述">
         <node_order><![CDATA[1]]></node_order>
         <externalid><![CDATA[]]></externalid>
         <version><![CDATA[1]]></version>
-        <summary><![CDATA[测试用例002]]></summary>
-        <preconditions><![CDATA[]]></preconditions>
+        <summary><![CDATA[用例描述]]></summary>
+        <preconditions><![CDATA[前置条件]]></preconditions>
         <execution_type><![CDATA[1]]></execution_type>
         <importance><![CDATA[2]]></importance>
       </testcase>
-      <testcase name="测试用例3">
+      <testcase name="把大象装进冰箱">
         <node_order><![CDATA[2]]></node_order>
         <externalid><![CDATA[]]></externalid>
         <version><![CDATA[1]]></version>
-        <summary><![CDATA[测试用例3]]></summary>
-        <preconditions><![CDATA[]]></preconditions>
+        <summary><![CDATA[把大象装进冰箱]]></summary>
+        <preconditions><![CDATA[前置条件：有一个冰箱]]></preconditions>
         <execution_type><![CDATA[1]]></execution_type>
         <importance><![CDATA[1]]></importance>
         <steps>
@@ -84,7 +83,6 @@
           <externalid><![CDATA[]]></externalid>
           <version><![CDATA[1]]></version>
           <summary><![CDATA[little suite     case1 withsstep]]></summary>
-          <preconditions><![CDATA[]]></preconditions>
           <execution_type><![CDATA[1]]></execution_type>
           <importance><![CDATA[2]]></importance>
           <steps>
@@ -110,7 +108,6 @@
           <externalid><![CDATA[]]></externalid>
           <version><![CDATA[1]]></version>
           <summary><![CDATA[little suite     case2]]></summary>
-          <preconditions><![CDATA[]]></preconditions>
           <execution_type><![CDATA[1]]></execution_type>
           <importance><![CDATA[1]]></importance>
         </testcase>
@@ -119,7 +116,6 @@
           <externalid><![CDATA[]]></externalid>
           <version><![CDATA[1]]></version>
           <summary><![CDATA[little suite     case3]]></summary>
-          <preconditions><![CDATA[]]></preconditions>
           <execution_type><![CDATA[1]]></execution_type>
           <importance><![CDATA[2]]></importance>
         </testcase>
@@ -129,7 +125,6 @@
         <externalid><![CDATA[]]></externalid>
         <version><![CDATA[1]]></version>
         <summary><![CDATA[suite2 case001]]></summary>
-        <preconditions><![CDATA[]]></preconditions>
         <execution_type><![CDATA[1]]></execution_type>
         <importance><![CDATA[1]]></importance>
       </testcase>
@@ -138,7 +133,6 @@
         <externalid><![CDATA[]]></externalid>
         <version><![CDATA[1]]></version>
         <summary><![CDATA[suite2 case002]]></summary>
-        <preconditions><![CDATA[]]></preconditions>
         <execution_type><![CDATA[1]]></execution_type>
         <importance><![CDATA[3]]></importance>
       </testcase>

@@ -102,7 +102,7 @@ class FreeMind(object):
                     if item_icon.attrib['BUILTIN'] == 'bookmark':
                         tc_node_order += 1
                         step_ts_node = lxmlET.SubElement(ts_node, 'testcase',
-                                                         {'name': tds_item.attrib['TEXT'].strip()})
+                                                         {'name': str(tds_item.attrib['TEXT']).split('&')[0]})
                         has_steps = True
                         break
 
@@ -112,13 +112,15 @@ class FreeMind(object):
                 continue
             '''存在步骤的，添加步骤内容'''
             if has_steps:
+                tds_item_str = str(tds_item.attrib['TEXT']).split('&')
                 self.logger.info(
-                    self.log_prefix + "Generating Test case       -<has steps> %s" % tds_item.attrib['TEXT'])
+                    self.log_prefix + "Generating Test case       -<has steps> %s" % tds_item_str[0])
                 lxmlET.SubElement(step_ts_node, 'node_order').text = lxmlET.CDATA(str(tc_node_order))
                 lxmlET.SubElement(step_ts_node, 'externalid').text = lxmlET.CDATA('')
                 lxmlET.SubElement(step_ts_node, 'version').text = lxmlET.CDATA('1')
-                lxmlET.SubElement(step_ts_node, 'summary').text = lxmlET.CDATA(tds_item.attrib['TEXT'].strip())
-                lxmlET.SubElement(step_ts_node, 'preconditions').text = lxmlET.CDATA('')
+                lxmlET.SubElement(step_ts_node, 'summary').text = lxmlET.CDATA(tds_item_str[0])
+                if len(tds_item_str) > 1:
+                    lxmlET.SubElement(step_ts_node, 'preconditions').text = lxmlET.CDATA(tds_item_str[1])
                 lxmlET.SubElement(step_ts_node, 'execution_type').text = lxmlET.CDATA('1')
 
                 node_reg_lvl = 2
@@ -184,19 +186,21 @@ class FreeMind(object):
                               "Please check node (%s) since it may use a long name. Please convert it to plain text via FreeMind Menu Format=>Use Plaine Text." % \
                               (tds_item.attrib['ID'].strip()))
             exit(-1)
-        self.logger.info(self.log_prefix + "Generating test case       -%s" % tds_item.attrib['TEXT'])
+        tds_item_str = str(tds_item.attrib['TEXT']).split('&')
+        self.logger.info(self.log_prefix + "Generating test case       -%s" % tds_item_str[0])
         node_reg_lvl = 2
         for node_icon in tds_item.findall('icon'):
             if node_icon.attrib['BUILTIN'].strip().count('full-') == 1:
                 node_reg_lvl = 4 - int(node_icon.attrib['BUILTIN'].strip()[-1])
             if node_reg_lvl < 1:
                 node_reg_lvl = 2
-        testcase = lxmlET.SubElement(ts_node, 'testcase', {'name': tds_item.attrib['TEXT'].strip()})
+        testcase = lxmlET.SubElement(ts_node, 'testcase', {'name': tds_item_str[0]})
         lxmlET.SubElement(testcase, 'node_order').text = lxmlET.CDATA(str(tc_node_order))
         lxmlET.SubElement(testcase, 'externalid').text = lxmlET.CDATA('')
         lxmlET.SubElement(testcase, 'version').text = lxmlET.CDATA('1')
-        lxmlET.SubElement(testcase, 'summary').text = lxmlET.CDATA(tds_item.attrib['TEXT'].strip())
-        lxmlET.SubElement(testcase, 'preconditions').text = lxmlET.CDATA('')
+        lxmlET.SubElement(testcase, 'summary').text = lxmlET.CDATA(tds_item_str[0])
+        if len(tds_item_str) >1:
+            lxmlET.SubElement(testcase, 'preconditions').text = lxmlET.CDATA(tds_item_str[1])
         lxmlET.SubElement(testcase, 'execution_type').text = lxmlET.CDATA('1')
         lxmlET.SubElement(testcase, 'importance').text = lxmlET.CDATA(str(node_reg_lvl))
 
@@ -210,8 +214,10 @@ class FreeMind(object):
 
 
 def start_main():
-    path = os.path.dirname(__file__)  # for windows
+    # path = os.path.dirname('./')  # for windows
+    path = os.getcwd()  # for windows
     # path = os.path.dirname(sys.executable)  # for mac
+
 
     logging.basicConfig(handlers=[logging.FileHandler(path + '/logger.log', 'w', 'utf-8')],
                         format='%(asctime)s:%(levelname)s  %(message)s',
@@ -233,3 +239,4 @@ def start_main():
 
 if __name__ == '__main__':
     start_main()
+    # print(os.getcwd())

@@ -1,30 +1,30 @@
-2018-05-20 23:29:36:INFO  FreeMind:Starting to export D:/GitHub_Project/freemind2testlink/demo.mm to xml file.
-2018-05-20 23:29:36:INFO  FreeMind:Generating test cases xml file for all TDS nodes.
-2018-05-20 23:29:36:INFO  FreeMind:Creating Test Suite   [Demo]
-2018-05-20 23:29:36:INFO  FreeMind:Creating Test Suite   [测试集合1]
-2018-05-20 23:29:36:INFO  FreeMind:Generating Test case       -<has steps> 登录case
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               点击登录
-2018-05-20 23:29:36:INFO  FreeMind:add Expected Results           -> 跳转到登录页面
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               输入正确账号密码点击登录 
-2018-05-20 23:29:36:INFO  FreeMind:add Expected Results           -> 登录成功
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               输入错误账号密码 
-2018-05-20 23:29:36:INFO  FreeMind:add Expected Results           -> 提示错误
-2018-05-20 23:29:36:INFO  FreeMind:Generating test case       -测试用例002
-2018-05-20 23:29:36:INFO  FreeMind:Generating Test case       -<has steps> 测试用例3
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               打开冰箱
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               塞进大象
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               关上冰箱
-2018-05-20 23:29:36:INFO  FreeMind:Creating Test Suite   [Suite2]
-2018-05-20 23:29:36:INFO  FreeMind:Creating Test Suite   [little suite]
-2018-05-20 23:29:36:INFO  FreeMind:Generating Test case       -<has steps> little suite     case1 withsstep
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               step1
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               step2
-2018-05-20 23:29:36:INFO  FreeMind:add Step actions               step3
-2018-05-20 23:29:36:INFO  FreeMind:Generating test case       -little suite     case2
-2018-05-20 23:29:36:INFO  FreeMind:Generating test case       -little suite     case3
-2018-05-20 23:29:36:INFO  FreeMind:Generating test case       -suite2 case001
-2018-05-20 23:29:36:INFO  FreeMind:Generating test case       -suite2 case002
-2018-05-20 23:29:36:INFO  FreeMind:Successfully generated the test cases xml file (D:/GitHub_Project/freemind2testlink/demo.xml).
+2018-05-21 00:48:41:INFO  FreeMind:Starting to export D:\GitHub_Project\freemind2testlink/Demo.mm to xml file.
+2018-05-21 00:48:41:INFO  FreeMind:Generating test cases xml file for all TDS nodes.
+2018-05-21 00:48:41:INFO  FreeMind:Creating Test Suite   [Demo]
+2018-05-21 00:48:41:INFO  FreeMind:Creating Test Suite   [测试集合1]
+2018-05-21 00:48:41:INFO  FreeMind:Generating Test case       -<has steps> 登录case
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               点击登录
+2018-05-21 00:48:41:INFO  FreeMind:add Expected Results           -> 跳转到登录页面
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               输入正确账号密码点击登录 
+2018-05-21 00:48:41:INFO  FreeMind:add Expected Results           -> 登录成功
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               输入错误账号密码 
+2018-05-21 00:48:41:INFO  FreeMind:add Expected Results           -> 提示错误
+2018-05-21 00:48:41:INFO  FreeMind:Generating test case       -用例描述
+2018-05-21 00:48:41:INFO  FreeMind:Generating Test case       -<has steps> 把大象装进冰箱
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               打开冰箱
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               塞进大象
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               关上冰箱
+2018-05-21 00:48:41:INFO  FreeMind:Creating Test Suite   [Suite2]
+2018-05-21 00:48:41:INFO  FreeMind:Creating Test Suite   [little suite]
+2018-05-21 00:48:41:INFO  FreeMind:Generating Test case       -<has steps> little suite     case1 withsstep
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               step1
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               step2
+2018-05-21 00:48:41:INFO  FreeMind:add Step actions               step3
+2018-05-21 00:48:41:INFO  FreeMind:Generating test case       -little suite     case2
+2018-05-21 00:48:41:INFO  FreeMind:Generating test case       -little suite     case3
+2018-05-21 00:48:41:INFO  FreeMind:Generating test case       -suite2 case001
+2018-05-21 00:48:41:INFO  FreeMind:Generating test case       -suite2 case002
+2018-05-21 00:48:41:INFO  FreeMind:Successfully generated the test cases xml file (D:\GitHub_Project\freemind2testlink/Demo.xml).
 
 
 
