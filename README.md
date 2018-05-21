@@ -1,7 +1,7 @@
 ﻿使用xmind、freemind创建的测试用例导出成testlink可导入的xml文件
 xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
 
-#### **freemind、xmind用例编写要求：**
+#### **xmind用例编写要求：**
 
 - TestSuite需要加上相关的图标：  旗帜 （对颜色无要求）
 - 有步骤的用例需要加上相关的图标： 星星 （对颜色无要求）
