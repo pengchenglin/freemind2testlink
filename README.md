@@ -31,3 +31,7 @@ xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
 
 - 生成的xml文件在导入testlink时，中心主题没有设定为suite的，请在testlink中手动创建一个测试用例集，将xml导入到testlink指定的用例集下。以免和原有的测试用例混淆造成管理混乱 （也可以直接在顶层加上旗帜图标，这样导出到testlink就是在一个文件夹下了）
 - 执行exe后会将文件夹下所有的.mm文件全部执行转换生成xml，为避免造成运行错误，请尽量保持文件夹下只有一个mm文件。
+
+#### **生成exe文件：**
+使用`Pyinstaller`进行打包，`pip install pyinstaller`安装好之后，到该文件夹下，执行`pyinstaller -F Freemind.py`.
+在生成的dist文件夹下就会生成一个独立的exe文件了。Mac下一样，需要修改一行代码。
