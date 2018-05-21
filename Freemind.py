@@ -215,8 +215,8 @@ class FreeMind(object):
 
 def start_main():
     # path = os.path.dirname('./')  # for windows
-    path = os.getcwd()  # for windows
-    # path = os.path.dirname(sys.executable)  # for mac
+    # path = os.getcwd()  # for windows
+    path = os.path.dirname(sys.executable)  # for mac
 
 
     logging.basicConfig(handlers=[logging.FileHandler(path + '/logger.log', 'w', 'utf-8')],
@@ -239,4 +239,3 @@ def start_main():
 
 if __name__ == '__main__':
     start_main()
-    # print(os.getcwd())
