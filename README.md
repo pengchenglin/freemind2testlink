@@ -1,4 +1,4 @@
-﻿使用freemind创建的测试用例导出成testlink可导入的xml文件
+﻿使用xmind、freemind创建的测试用例导出成testlink可导入的xml文件
 xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
 
 #### **freemind、xmind用例编写要求：**
