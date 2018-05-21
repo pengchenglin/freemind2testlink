@@ -18,7 +18,7 @@ xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
 
 - 将需要转换的freemind文件(例如demo.mm) 复制到当前文件夹
 
-- 根据编写freemind的时候suite配置的图标,点击By_flag.exe(以旗帜标记为suite),双击即可生成xml文件和logger.log（log文件可查看导出的相关日志）
+- 双击By_flag(Mac：By_flag、Windows：By_flag.exe),双击即可生成xml文件和logger.log（log文件可查看导出的相关日志）
 也可以执行Freemind.py文件，相关的依赖库`lxml`请自行下载`pip install lxml`
 
 - 将生成的xml文件导入到Testlink就好啦
